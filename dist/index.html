@@ -22,7 +22,23 @@
     <nav class="bg-gray-100">
       <div class="mx-auto max-w-7xl px-2">
         <div class="relative flex h-16 items-center justify-between">
-          <div class="flex flex-1 items-center justify-center">
+          <!-- Mobile Menu -->
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <button
+              type="button"
+              class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 focus:ring-white"
+            >
+              <span class="sr-only">Open main menu</span>
+
+              <ion-icon
+                name="menu"
+                class="text-2xl"
+                onclick="toggleMenu(this)"
+              ></ion-icon>
+            </button>
+          </div>
+
+          <div class="hidden flex flex-1 items-center justify-center">
             <div class="flex space-x-4">
               <a
                 href="#"
@@ -48,6 +64,39 @@
               <a
                 href="#"
                 class="bg-gray-200 text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 hover:text-white"
+              >
+                Projects
+              </a>
+            </div>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+              <a
+                href="#"
+                class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Home
+              </a>
+
+              <a
+                href="#"
+                class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Education
+              </a>
+
+              <a
+                href="#"
+                class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Skills
+              </a>
+
+              <a
+                href="#"
+                class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Projects
               </a>
